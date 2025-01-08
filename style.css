@@ -298,4 +298,30 @@ h1{
     padding: 10px;
     font-size: 1rem;
 
+
 }
+
+
+.style-btn, #home-btn {
+    transition: all 0.3s ease;
+}
+
+.style-btn:hover, #home-btn:hover {
+    background-color: #2E2E2E;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+.li-resources img {
+    transition: transform 0.3s ease;
+}
+
+.li-resources img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+  
+  
