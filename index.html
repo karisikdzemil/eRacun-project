@@ -1,134 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
+    <script src="./assets/Login.js" defer></script>
     <title>eRacun</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <div class="title-div">
-        <img class="logo" src="./images/eRacun-logo.jpeg" alt="Logo" />
-        <h1>eRacun</h1>
-      </div>
-      <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Resources</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li id="logOut">Log Out</li>
-      </ul>
-    </header>
-    <section class="home">
-      <div class="home-shadow">
-        <p>
-          Discover how to optimize your electricity usage and save on energy
-          costs effectively.
-        </p>
-        <h1>Welcome to eRacun</h1>
-        <button id="home-btn">Contact Us</button>
-      </div>
-    </section>
-    <section class="services">
-      <h1>Services</h1>
-      <div class="services-value">
-        <div class="services-div">
-          <label for="">Standard consuption:</label>
-          <input type="number" placeholder="KW" />
+        <div class="title-div">
+         <img class="logo" src="./images/eRacun-logo.jpeg" alt="Logo">
+         <h1>eRacun</h1>
         </div>
-        <div class="services-div">
-          <label id="align-div" for="">Cheap consuption:</label>
-          <input type="number" placeholder="KW" />
-        </div>
-        <button class="style-btn">Process</button>
-      </div>
+         <ul>
+             <li>Home</li>
+             <li>Services</li>
+             <li>Resources</li>
+             <li>About Us</li>
+             <li>Contact Us</li>
+             <li>Log In</li>
+         </ul>
+     </header>
+    <section class="logIn">
+        <h1 id="login-title">Log In</h1>
+        <form id="form-login" action="">
+            <input class="input" type="email" id="email" placeholder="Enter email">
+            <p id="wrong-enter-email"></p>
+            <input class="input" type="password" id="pass" placeholder="password">
+            <p id="wrong-enter-pass"></p>
+            <button type="submit" class="style-btn" id="form-btn">Login </button>
+        </form>
     </section>
-
-    <section class="resources">
-      <h1>Energy Saving Guides</h1>
-      <p id="res-p">
-        Your go-to resource for practical energy-saving strategies.
-      </p>
-
-      <ul id="ul-resources">
-        <li class="li-resources">
-          <img
-            src="./images/resources/Screenshot 2024-12-16 at 19.20.42.png"
-            alt=""
-          />
-          <h3>Home Energy Efficiency</h3>
-          <p>
-            Discover effective methods to enhance the energy efficiency of your
-            home.
-          </p>
-          <button class="style-btn">Read More</button>
-        </li>
-        <li class="li-resources">
-          <img
-            src="./images/resources/Screenshot 2024-12-16 at 19.21.04.png"
-            alt=""
-          />
-          <h3>Office Energy Managment</h3>
-          <p>
-            Implementing energy-saving practices in your office can lead to
-            remarkable cost reductions.
-          </p>
-          <button class="style-btn">Read More</button>
-        </li>
-        <li class="li-resources">
-          <img
-            src="./images/resources/Screenshot 2024-12-16 at 19.21.39.png"
-            alt=""
-          />
-          <h3>Renewable Energy Options</h3>
-          <p>
-            Implementing energy-saving practices in your office can lead to
-            remarkable cost reductions.
-          </p>
-          <button class="style-btn">Read More</button>
-        </li>
-      </ul>
-    </section>
-
-    <section class="aboutUs">
-      <div class="aboutCards">
-        <div class="aboutCard">
-          <img src="./images/about us/Screenshot 2024-12-16 at 20.52.13.png" alt="" />
-          <div class="cardText">
-            <h3>Promoting Energy Awareness</h3>
-            <p>We aim to educate our users about the importance of energy conservation and its impact on both the environment and their finances. Through informative resources. </p>
-          </div>
-        </div>
-        <div class="aboutCard">
-          <img src="./images/about us/Screenshot 2024-12-16 at 20.52.29.png" alt="" />
-          <div class="cardText">
-            <h3>Innovative Solutions</h3>
-            <p>Our team is committed to providing innovative solutions that help users monitor and manage their energy usage effectively.</p>
-          </div>
-        </div>
-        <div class="aboutCard">
-          <img src="./images/about us/Screenshot 2024-12-16 at 20.52.53.png" alt="" />
-          <div class="cardText">
-            <h3>Building a Sustalnable Future</h3>
-            <p>We believe that every effort counts in building a sustainable future.By promoting energy-saving practices.</p>
-          </div>
-        </div>
-      </div>
-      <h1>About eRacun</h1>
-    </section>
-
-    <section class="contactUs">
-       <div>
-        <h1>Contact Us Anytime</h1>
-        <p>We're here to help with your queries</p>
-       </div>
-        <input type="text" placeholder="FulName">
-        <input type="text" placeholder="Email">
-        <textarea name="" id="" placeholder="Message"></textarea>
-        <button class="style-btn">Submit</button>
-    </section>
-  </body>
+</body>
 </html>
