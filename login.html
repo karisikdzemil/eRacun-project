@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
     <script src="./assets/Login.js" defer></script>
     <title>eRacun</title>
 </head>
@@ -26,7 +27,9 @@
         <h1 id="login-title">Log In</h1>
         <form id="form-login" action="">
             <input class="input" type="email" id="email" placeholder="Enter email">
+            <p id="wrong-enter-email"></p>
             <input class="input" type="password" id="pass" placeholder="password">
+            <p id="wrong-enter-pass"></p>
             <button type="submit" class="style-btn" id="form-btn">Login </button>
         </form>
     </section>

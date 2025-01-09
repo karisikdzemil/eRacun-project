@@ -323,5 +323,9 @@ h1{
 }
 
 
-  
-  
+#wrong-enter-pass{
+    color: red;
+}
+#wrong-enter-email{
+    color: red;
+}
