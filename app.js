@@ -7,6 +7,13 @@ const showMoreTitle = showMoreModal.querySelector("h1");
 const showMorePar = showMoreModal.querySelector("p");
 const blackDrop = document.querySelector(".black-drop");
 const removeModalButton = showMoreModal.querySelector("button");
+const contactName = document.getElementById("contact-name");
+const contactEmail = document.getElementById("contact-email");
+const contactMessage = document.querySelector("textarea");
+const contactButton = document.getElementById("contact-us-btn");
+const wrongName = document.getElementById("wrong-name");
+const wrongEmail = document.getElementById("wrong-email");
+const wrongMessage = document.getElementById("wrong-message");
 
 
 const showModalHandler = (event) => {
@@ -32,6 +39,32 @@ const removeModalHandler = () => {
     blackDrop.classList.toggle("visible");
 }
 
+const validateContactHandler = () => {
+    if(!/^[A-Z][a-z]+(\s[A-Z][a-z]?){0,}/.test(contactName.value)){
+        wrongName.textContent = "You must enter valid name!"
+    }else{
+        wrongName.textContent = '';
+    }
+
+    if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(contactEmail.value)){
+        wrongEmail.textContent = "You must enter valid email address!"
+    }else{
+        wrongEmail.textContent = '';
+    }
+
+    if(contactMessage.value === ''){
+        wrongMessage.textContent = "You must enter any message!"
+    }else{
+        wrongMessage.textContent = '';
+    }
+    
+        // contactName.value = '';
+        // contactEmail.value = ''; 
+        // contactMessage.value = ''; 
+}
+
+
+contactButton.addEventListener("click", validateContactHandler);
 
 removeModalButton.addEventListener("click", removeModalHandler);
 modalUl.addEventListener("click", showModalHandler);
