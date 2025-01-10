@@ -58,9 +58,9 @@ const validateContactHandler = () => {
         wrongMessage.textContent = '';
     }
     
-        // contactName.value = '';
-        // contactEmail.value = ''; 
-        // contactMessage.value = ''; 
+        contactName.value = '';
+        contactEmail.value = ''; 
+        contactMessage.value = ''; 
 }
 
 
