@@ -14,6 +14,8 @@ const contactButton = document.getElementById("contact-us-btn");
 const wrongName = document.getElementById("wrong-name");
 const wrongEmail = document.getElementById("wrong-email");
 const wrongMessage = document.getElementById("wrong-message");
+const submitFormModal = document.getElementById("form-submit-modal");
+const submitFormModalBtn = document.getElementById("form-submit-modal-btn");
 
 
 const showModalHandler = (event) => {
@@ -40,28 +42,42 @@ const removeModalHandler = () => {
 }
 
 const validateContactHandler = () => {
+    let name = false;
+    let email = false;
+    let message = false;
     if(!/^[A-Z][a-z]+(\s[A-Z][a-z]?){0,}/.test(contactName.value)){
         wrongName.textContent = "You must enter valid name!"
     }else{
         wrongName.textContent = '';
+        name = true;
     }
 
     if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(contactEmail.value)){
         wrongEmail.textContent = "You must enter valid email address!"
     }else{
         wrongEmail.textContent = '';
+        email = true;
     }
 
     if(contactMessage.value === ''){
         wrongMessage.textContent = "You must enter any message!"
     }else{
         wrongMessage.textContent = '';
+        message = true;
     }
-    
-        contactName.value = '';
-        contactEmail.value = ''; 
-        contactMessage.value = ''; 
+        if(name && email && message){
+            contactName.value = '';
+            contactEmail.value = ''; 
+            contactMessage.value = ''; 
+            submitFormModal.style.display = "flex";
+            blackDrop.classList.toggle("visible");
+        }
 }
+
+submitFormModalBtn.addEventListener("click", () => {
+    blackDrop.classList.toggle("visible");
+    submitFormModal.style.display = "none"
+});
 
 
 contactButton.addEventListener("click", validateContactHandler);

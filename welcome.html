@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css" />
     <script src="./app.js" defer></script>
     <title>eRacun</title>
@@ -11,7 +12,7 @@
     <header>
       <div class="title-div">
         <img class="logo" src="./images/eRacun-logo.jpeg" alt="Logo" />
-        <h1>eRacun</h1>
+        <h1><a href="welcome.html#home" class="sec">eRacun</a></h1>
       </div>
       <ul id="header-ul">
         <li><a href="welcome.html#home" class="sec">Home</a></li>
@@ -153,7 +154,13 @@
     </section>
 
     <section id="contactUs">
-      <div>
+      <div id="form-submit-modal">
+        <i id="check" class="fa fa-check" aria-hidden="true"></i>
+        <h1>Success</h1>
+        <p>Congratulations, your form was successfully submitted, we will reach out soon!</p>
+        <button  id="form-submit-modal-btn" class="style-btn">Go back</button>
+      </div>
+      <div id="contact-us-title">
         <h1>Contact Us Anytime</h1>
         <p id="contactUs-p">We're here to help with your queries</p>
       </div>

@@ -162,6 +162,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 .services-value {
   width: 45%;
@@ -201,6 +202,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height: 100vh;
 }
 #resources h1 {
   color: #2e2e2e;
@@ -240,6 +242,7 @@ h1 {
 #aboutUs {
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 .aboutCards {
   width: 75%;
@@ -287,7 +290,7 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
 }
-#contactUs div {
+#contact-us-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -395,4 +398,36 @@ h1 {
 .wrong{
   color: red;
   margin-bottom: 10px;
+}
+#form-submit-modal{
+  width: 350px;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  border: 2px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 1rem;
+  display: none;
+}
+#check{
+color: white;
+background-color: green;
+font-size: 3rem;
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+text-align: center;
+padding: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  
 }
