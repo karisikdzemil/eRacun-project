@@ -538,3 +538,10 @@ align-items: center;
     width: 90%;
   }
 }
+
+#language-selector{
+  margin-right: 2rem;
+  height: 3 0px;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+}

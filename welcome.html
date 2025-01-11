@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="./assets/translate.js" defer></script>
     <script src="./app.js" defer></script>
     <title>eRacun</title>
   </head>
   <body>
+    <!-- <script>
+      function loadGoogleTranslate(){
+        new google.translate.TranslateElement("myid")
+      }
+    </script>
+    <div id="myid">Choose language</div> -->
     <header>
       <div class="title-div">
         <img class="logo" src="./images/eRacun-logo.jpeg" alt="Logo" />
         <h1><a href="welcome.html#home" class="sec">eRacun</a></h1>
       </div>
       <ul id="header-ul">
-        <li><a href="welcome.html#home" class="sec">Home</a></li>
-        <li><a href="welcome.html#services" class="sec">Services</a></li>
-        <li><a href="welcome.html#resources" class="sec">Resources</a></li>
-        <li><a href="welcome.html#aboutUs" class="sec">About Us</a></li>
-        <li><a href="welcome.html#contactUs" class="sec">Contact Us</a></li>
+        <li><a id="home-nav" href="welcome.html#home" class="sec">Home</a></li>
+        <li><a id="services" href="welcome.html#services" class="sec">Services</a></li>
+        <li><a id="resources" href="welcome.html#resources" class="sec">Resources</a></li>
+        <li><a id="about" href="welcome.html#aboutUs" class="sec">About Us</a></li>
+        <li><a id="contact" href="welcome.html#contactUs" class="sec">Contact Us</a></li>
         <li id="logOut">Log Out</li>
       </ul>
     </header>
@@ -30,7 +39,7 @@
           costs effectively.
         </p>
         <h1>Welcome to eRacun</h1>
-        <button id="home-btn">Contact Us</button>
+        <button id='home-btn'>Contact Us</button>
       </div>
     </section>
     <section id="services">
@@ -68,7 +77,7 @@
       </div>
 
       <ul id="ul-resources">
-        <li class="li-resources">
+        <li class="li-resources" id="card1">
           <img
             src="./images/resources/Screenshot 2024-12-16 at 19.20.42.png"
             alt=""
@@ -80,7 +89,7 @@
           </p>
           <button class="style-btn">Read More</button>
         </li>
-        <li class="li-resources">
+        <li class="li-resources" id="card2">
           <img
             src="./images/resources/Screenshot 2024-12-16 at 19.21.04.png"
             alt=""
@@ -92,7 +101,7 @@
           </p>
           <button class="style-btn">Read More</button>
         </li>
-        <li class="li-resources">
+        <li class="li-resources" id="card3">
           <img
             src="./images/resources/Screenshot 2024-12-16 at 19.21.39.png"
             alt=""
@@ -111,7 +120,7 @@
       <div class="aboutCards">
       <h1 id="responsive-title">About eRacun</h1>
 
-        <div class="aboutCard">
+        <div class="aboutCard" id="about1">
           <img class="aboutus-img"
             src="./images/about us/Screenshot 2024-12-16 at 20.52.13.png"
             alt=""
@@ -125,7 +134,7 @@
             </p>
           </div>
         </div>
-        <div class="aboutCard">
+        <div class="aboutCard" id="about2">
           <img class="aboutus-img"
             src="./images/about us/Screenshot 2024-12-16 at 20.52.29.png"
             alt=""
@@ -138,7 +147,7 @@
             </p>
           </div>
         </div>
-        <div class="aboutCard">
+        <div class="aboutCard" id="about3">
           <img class="aboutus-img"
             src="./images/about us/Screenshot 2024-12-16 at 20.52.53.png"
             alt=""
