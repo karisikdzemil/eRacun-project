@@ -109,8 +109,10 @@
 
     <section id="aboutUs">
       <div class="aboutCards">
+      <h1 id="responsive-title">About eRacun</h1>
+
         <div class="aboutCard">
-          <img
+          <img class="aboutus-img"
             src="./images/about us/Screenshot 2024-12-16 at 20.52.13.png"
             alt=""
           />
@@ -124,7 +126,7 @@
           </div>
         </div>
         <div class="aboutCard">
-          <img
+          <img class="aboutus-img"
             src="./images/about us/Screenshot 2024-12-16 at 20.52.29.png"
             alt=""
           />
@@ -137,7 +139,7 @@
           </div>
         </div>
         <div class="aboutCard">
-          <img
+          <img class="aboutus-img"
             src="./images/about us/Screenshot 2024-12-16 at 20.52.53.png"
             alt=""
           />
@@ -150,7 +152,7 @@
           </div>
         </div>
       </div>
-      <h1>About eRacun</h1>
+      <h1 id="unresponsive-title">About eRacun</h1>
     </section>
 
     <section id="contactUs">
@@ -164,11 +166,11 @@
         <h1>Contact Us Anytime</h1>
         <p id="contactUs-p">We're here to help with your queries</p>
       </div>
-      <input id="contact-name" type="text" placeholder="FullName" />
+      <input class="responsive" id="contact-name" type="text" placeholder="FullName" />
       <p id="wrong-name" class="wrong"></p>
-      <input id="contact-email" type="email" placeholder="Email" />
+      <input class="responsive" id="contact-email" type="email" placeholder="Email" />
       <p id="wrong-email" class="wrong"></p>
-      <textarea placeholder="Message"></textarea>
+      <textarea class="responsive" placeholder="Message"></textarea>
       <p id="wrong-message" class="wrong"></p>
       <button id="contact-us-btn" class="style-btn">Submit</button>
     </section>

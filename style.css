@@ -261,7 +261,7 @@ h1 {
   align-items: center;
   padding-left: 10%;
 }
-#aboutUs img {
+.aboutus-img {
   width: 37%;
   height: 25vh;
   margin-right: 5%;
@@ -304,16 +304,17 @@ h1 {
   font-size: 20px;
 }
 #contactUs input {
-  width: 30%;
   height: 5vh;
   padding-left: 10px;
   font-size: 1rem;
 }
 #contactUs textarea {
-  width: 30%;
   height: 20vh;
   padding: 10px;
   font-size: 1rem;
+}
+.responsive{
+  width: 30%;
 }
 
 .style-btn,
@@ -427,7 +428,113 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+#responsive-title{
+  display: none;
+}
 
 @media screen and (max-width: 480px) {
-  
+  .logo{
+    width: 40px;
+    /* height: ; */
+  }
+  header ul{
+    display: none;
+  }
+
+  #form-login{
+    width: 90%;
+  }
+
+  #home{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: calc(350%);
+    text-align: center;
+  }
+  #home p{
+    font-size: 20px;
+  }
+  #home h1{
+    font-size: 35px;
+  }
+  #services{
+    height: 90vh;
+  }
+  .services-value{
+    width: 90%;
+    height: 50vh;
+  }
+  .services-div{
+    width: 100%;
+    font-size: 20px;
+  }
+  #resources{
+    /* min-height: 90vh; */
+    height: 210vh;
+    display: block;
+  }
+  #resources h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  #resources p{
+    font-size: 20px;
+    text-align: center;
+    margin:25px 0;
+    padding: 0 1rem;
+  }
+  #ul-resources{
+    height: 185vh;
+    /* background-color: red; */
+    flex-direction: column;
+  }
+  #ul-resources li{
+    width: 90%;
+    margin: 2rem 0;
+  }
+
+  #aboutUs{
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutCards{
+    height: 180vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .aboutCard{
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0;
+    height: 50vh;
+  }
+  .aboutCard h3{
+    font-size: 25px;
+    margin: 1rem 0;
+  }
+  .aboutCard p{
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+  .aboutCard img{
+    width: 90%;
+    margin-left: 20px;
+  }
+  .cardText{
+    width: 90%;
+  }
+  #responsive-title{
+    display: block;
+  }
+  #unresponsive-title{
+    display: none;
+  }
+  .responsive{
+    width: 90%;
+  }
 }

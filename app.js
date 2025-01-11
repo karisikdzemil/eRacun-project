@@ -79,7 +79,6 @@ submitFormModalBtn.addEventListener("click", () => {
     submitFormModal.style.display = "none"
 });
 
-
 contactButton.addEventListener("click", validateContactHandler);
 
 removeModalButton.addEventListener("click", removeModalHandler);
