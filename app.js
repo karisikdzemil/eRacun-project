@@ -45,14 +45,12 @@ const showModalHandler = (event) => {
 //         showMoreModal.classList.toggle("visible");
 //         blackDrop.classList.toggle("visible");
 //       });
-
          const par = cards.find(el => el.title ===title);
         showMoreImg.src = imgUrl;
         showMoreTitle.textContent = par.title;
         showMorePar.textContent = par.paragraph;
         showMoreModal.classList.toggle("visible");
         blackDrop.classList.toggle("visible");
-        console.log(showMoreImg, showMoreTitle)
   }
 };
 
