@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
-    <script src="./assets/Login.js" defer></script>
-    <title>eRacun</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
+        <script src="./assets/Login.js" defer></script>
+
+        <!-- <script src="./app.js" defer></script> -->
+        <title>eRacun</title>
+      </head>
 <body>
     <header>
         <div class="title-div">
-         <img class="logo" src="./images/eRacun-logo.jpeg" alt="Logo">
-         <h1>eRacun</h1>
+          <img class="logo" src="./images/eRacun-logo.jpeg" alt="Logo" />
+          <h1><a href="welcome.html#home" class="sec">eRacun</a></h1>
         </div>
-         <ul>
-             <li>Home</li>
-             <li>Services</li>
-             <li>Resources</li>
-             <li>About Us</li>
-             <li>Contact Us</li>
-             <li>Log In</li>
-         </ul>
-     </header>
+        <ul id="header-ul">
+          <li><a class="home-nav"  class="sec">Home</a></li>
+          <li><a class="services-nav"  >Services</a></li>
+          <li><a class="resources-nav"  class="sec">Resources</a></li>
+          <li><a class="about-nav"  class="sec">About Us</a></li>
+          <li><a class="contact-nav"  class="sec">Contact Us</a></li>
+          <li class="logOut">Log Out</li>
+        </ul>
+       <div class="hamburger-menu-head">
+        <div class="hamburgerMenu">
+          <div class="icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+       </div>
+        <div class="hamburgerModal">
+          <ul id="hamb-ul">
+            <li><a class="home-nav" class="sec">Home</a></li>
+            <li><a class="services-nav"  class="sec">Services</a></li>
+            <li><a class="resources-nav" class="sec">Resources</a></li>
+            <li><a class="about-nav" class="sec">About Us</a></li>
+            <li><a class="contact-nav" class="sec">Contact Us</a></li>
+            <li class="logOut" id="logOutHamb">Log Out</li>
+          </ul>
+        </div>
+      </header>
     <section class="logIn">
         <h1 id="login-title">Log In</h1>
         <form id="form-login" action="">

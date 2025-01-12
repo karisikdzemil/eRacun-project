@@ -47,7 +47,7 @@ header ul li {
 header ul li:hover {
   border-bottom: 1px solid #2e2e2e;
 }
-#logOut {
+.logOut {
   background-color: #2e2e2e;
   color: white;
   font-weight: 300;
@@ -437,7 +437,7 @@ align-items: center;
     width: 40px;
     /* height: ; */
   }
-  header ul{
+  header #header-ul{
     display: none;
   }
 
@@ -537,11 +537,64 @@ align-items: center;
   .responsive{
     width: 90%;
   }
+  header{
+    justify-content: space-between;
+  }
+}
+.hamburger-menu-head{
+  width: 200px;
+  background-color: red;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.hamburgerMenu{
+  background-color: blue;
+  padding: 10px;
+  position: absolute;
+  right: 15px;
 }
 
+.icon{
+  font-size: 2rem;
+  /* background-color: blue; */
+  width: 20%;
+  height: 20%;
+  text-align: center;
+}
+.hamburgerModal{
+  width: 300px;
+  height: 600px;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 90px;
+  right: -450px;
+  transition: right 0.5s ease;
+  display: none;
+}
+.hambVisible{
+  display: block;
+  right: 0;
+}
+#hamb-ul{
+  /* background-color: blue; */
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hamb-ul li{
+  /* background-color: red; */
+  width: 40%;
+  height: 30px;
+  text-align: center;
+}
+
+
 #language-selector{
-  margin-right: 2rem;
-  height: 3 0px;
+  margin-right: 3rem;
+  height: 30px;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
 }

@@ -82,12 +82,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#card1 button").textContent = translations[language].energyCardB;
         document.querySelector("#card2 button").textContent = translations[language].energyCardB;
         document.querySelector("#card3 button").textContent = translations[language].energyCardB;
-        document.querySelector("#home-nav").textContent = translations[language].home;
-        document.querySelector("#services").textContent = translations[language].services;
-        document.querySelector("#resources").textContent = translations[language].resources;
-        document.querySelector("#about").textContent = translations[language].about;
-        document.querySelector("#contact").textContent = translations[language].contact;
-        document.querySelector("#logOut").textContent = translations[language].logout
+        document.querySelector(".home-nav").textContent = translations[language].home;
+        document.querySelector(".services-nav").textContent = translations[language].services;
+        document.querySelector(".resources-nav").textContent = translations[language].resources;
+        document.querySelector(".about-nav").textContent = translations[language].about;
+        document.querySelector(".contact-nav").textContent = translations[language].contact;
+        document.querySelector(".logOut").textContent = translations[language].logout
         document.querySelector("#unresponsive-title").textContent = translations[language].abouth;
         document.querySelector("#responsive-title").textContent = translations[language].abouth;
         document.querySelector("#about1 h3").textContent = translations[language].about1t;
@@ -119,20 +119,18 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#form-submit-modal p").textContent = translations[language].success;
     };
 
-    // Dodavanje dugmeta za izbor jezika
     const languageSelector = document.createElement("select");
     languageSelector.id = "language-selector";
     languageSelector.innerHTML = `
         <option value="en">English</option>
         <option value="sr">Srpski</option>
     `;
-    document.querySelector("header").appendChild(languageSelector);
+    document.querySelector(".hamburger-menu-head").prepend(languageSelector);
 
-    // Promena jezika na osnovu izbora
     languageSelector.addEventListener("change", (e) => {
         changeLanguage(e.target.value);
     });
 
-    // Postavljanje početnog jezika
     changeLanguage("en");
 });
+{/* <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script> */}

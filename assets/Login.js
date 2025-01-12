@@ -3,8 +3,26 @@ const password = document.getElementById("pass");
 const formBtn = document.getElementById("form-btn");
 const wrongEnterPass = document.getElementById("wrong-enter-pass");
 const wrongEnterEmail = document.getElementById("wrong-enter-email");
+const hambMenu = document.querySelector(".hamburgerMenu");
+const hambModal = document.querySelector(".hamburgerModal");
+const hambUl = document.querySelector("#hamb-ul")
 
 const emailReg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+console.log(hambMenu, hambModal, hambUl)
+
+hambMenu.addEventListener("click", () => {
+  hambModal.classList.toggle("hambVisible");
+})
+
+hambUl.addEventListener("click", (event) => {
+  if(event.target.tagName === "LI" || event.target.tagName === "A"){
+      alert("You need first to log in");
+      hambModal.classList.toggle("hambVisible");
+  }
+})
+
+
 
 class Login {
   constructor(email, password) {

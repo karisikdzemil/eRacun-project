@@ -1,4 +1,6 @@
-const logout = document.getElementById("logOut");
+const logoutHeader = document.querySelector(".logOut");
+const logoutHamb = document.querySelector("#logOutHamb");
+
 const homeBtn = document.getElementById("home-btn");
 const modalUl = document.getElementById("ul-resources");
 const showMoreModal = document.querySelector(".show-more-modal");
@@ -16,6 +18,16 @@ const wrongEmail = document.getElementById("wrong-email");
 const wrongMessage = document.getElementById("wrong-message");
 const submitFormModal = document.getElementById("form-submit-modal");
 const submitFormModalBtn = document.getElementById("form-submit-modal-btn");
+const hambMenu = document.querySelector(".hamburgerMenu");
+const hambModal = document.querySelector(".hamburgerModal");
+const hambUl = document.querySelector("#hamb-ul")
+
+
+
+
+hambMenu.addEventListener("click", () => {
+    hambModal.classList.toggle("hambVisible");
+})
 
 
 const showModalHandler = (event) => {
@@ -83,7 +95,13 @@ contactButton.addEventListener("click", validateContactHandler);
 
 removeModalButton.addEventListener("click", removeModalHandler);
 modalUl.addEventListener("click", showModalHandler);
-logout.addEventListener("click", () => (location.href = "index.html"));
+logoutHeader.addEventListener("click", () => (location.href = "index.html"));
+logoutHamb.addEventListener("click", () => (location.href = "index.html"));
+hambUl.addEventListener("click", (event) => {
+    if(event.target.tagName === "LI" || event.target.tagName === "A"){
+        hambModal.classList.toggle("hambVisible");
+    }
+})
 homeBtn.addEventListener(
   "click",
   () => (location.href = "welcome.html#contactUs")
