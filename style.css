@@ -432,7 +432,56 @@ align-items: center;
   display: none;
 }
 
+.hamburger-menu-head{
+  width: 200px;
+  /* background-color: red; */
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.hamburgerMenu{
+  display: none;
+}
+
+.icon{
+  font-size: 2rem;
+  /* background-color: blue; */
+  width: 20%;
+  height: 20%;
+  text-align: center;
+}
+.hamburgerModal{
+  width: 300px;
+  height: 600px;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 90px;
+  right: -450px;
+  transition: right 0.5s ease;
+  display: none;
+}
+.hambVisible{
+  display: block;
+  right: 0;
+}
+#hamb-ul{
+  /* background-color: blue; */
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hamb-ul li{
+  /* background-color: red; */
+  width: 40%;
+  height: 30px;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 480px) {
+  
   .logo{
     width: 40px;
     /* height: ; */
@@ -470,7 +519,7 @@ align-items: center;
   }
   #resources{
     /* min-height: 90vh; */
-    height: 210vh;
+    height: 220vh;
     display: block;
   }
   #resources h1{
@@ -572,55 +621,13 @@ align-items: center;
     /* background-color: red; */
     font-size: 18px;
   }
-}
-.hamburger-menu-head{
-  width: 200px;
-  /* background-color: red; */
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-}
-.hamburgerMenu{
-  /* background-color: blue; */
-  padding: 10px;
-  position: absolute;
-  right: 15px;
-}
-
-.icon{
-  font-size: 2rem;
-  /* background-color: blue; */
-  width: 20%;
-  height: 20%;
-  text-align: center;
-}
-.hamburgerModal{
-  width: 300px;
-  height: 600px;
-  background-color: #f5f5f5;
-  position: absolute;
-  top: 90px;
-  right: -450px;
-  transition: right 0.5s ease;
-  display: none;
-}
-.hambVisible{
-  display: block;
-  right: 0;
-}
-#hamb-ul{
-  /* background-color: blue; */
-  width: 300px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-}
-
-#hamb-ul li{
-  /* background-color: red; */
-  width: 40%;
-  height: 30px;
-  text-align: center;
+  .hamburgerMenu{
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    display: block;
+  }
+  
 }
 
 
