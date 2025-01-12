@@ -34,7 +34,7 @@ const showModalHandler = (event) => {
   if (event.target.tagName === "BUTTON") {
     const title = event.target.closest("li").querySelector("h3").textContent;
     const imgUrl = event.target.closest("li").querySelector("img").src;
-    fetch("/assets/moreText.JSON")
+    fetch("./assets/moreText.JSON")
       .then((response) => response.json())
       .then(text => {
         const par = text.find(el => el.title ===title)
