@@ -17,7 +17,7 @@ hambMenu.addEventListener("click", () => {
 
 hambUl.addEventListener("click", (event) => {
   if(event.target.tagName === "LI" || event.target.tagName === "A"){
-      alert("You need first to log in");
+      alert("You must log in first!");
       hambModal.classList.toggle("hambVisible");
   }
 })
@@ -43,13 +43,13 @@ class Login {
   validatePassword() {
     wrongEnterPass.textContent = "";
     if (!/^.{8,}$/.test(this.pass)) {
-      wrongEnterPass.textContent = "You must enter keyword with min 8 letter";
+      wrongEnterPass.textContent = "You must enter a word of at least 8 letters!";
       return false;
     } else if (!this.pass.match(/\d+/)) {
-      wrongEnterPass.textContent = "You need to enter least one number";
+      wrongEnterPass.textContent = "You must enter at least one number!";
       return false;
     } else if (!this.pass.match(/[A-Z]/)) {
-      wrongEnterPass.textContent = "You need to enter least one upper case";
+      wrongEnterPass.textContent = "You must have at least one capital letter!";
       return false;
     } else {
       wrongEnterPass.textContent = "";

@@ -64,21 +64,21 @@ const validateContactHandler = () => {
     let email = false;
     let message = false;
     if(!/^[A-Z][a-z]+(\s[A-Z][a-z]?){0,}/.test(contactName.value)){
-        wrongName.textContent = "You must enter valid name!"
+        wrongName.textContent = "You must enter a valid name!"
     }else{
         wrongName.textContent = '';
         name = true;
     }
 
     if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(contactEmail.value)){
-        wrongEmail.textContent = "You must enter valid email address!"
+        wrongEmail.textContent = "You must enter a valid email address!"
     }else{
         wrongEmail.textContent = '';
         email = true;
     }
 
     if(contactMessage.value === ''){
-        wrongMessage.textContent = "You must enter any message!"
+        wrongMessage.textContent = "You must enter a message!"
     }else{
         wrongMessage.textContent = '';
         message = true;
