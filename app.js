@@ -94,7 +94,7 @@ submitFormModalBtn.addEventListener("click", () => {
 contactButton.addEventListener("click", validateContactHandler);
 
 removeModalButton.addEventListener("click", removeModalHandler);
-modalUl.addEventListener("touch", showModalHandler);
+// modalUl.addEventListener("", showModalHandler);
 logoutHeader.addEventListener("click", () => (location.href = "index.html"));
 logoutHamb.addEventListener("click", () => (location.href = "index.html"));
 hambUl.addEventListener("click", (event) => {
