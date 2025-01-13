@@ -1,6 +1,5 @@
 const logoutHeader = document.querySelector(".logOut");
 const logoutHamb = document.querySelector("#logOutHamb");
-
 const homeBtn = document.getElementById("home-btn");
 const modalUl = document.getElementById("ul-resources");
 const showMoreModal = document.querySelector(".show-more-modal");

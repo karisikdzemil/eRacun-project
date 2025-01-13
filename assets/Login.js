@@ -6,10 +6,10 @@ const wrongEnterEmail = document.getElementById("wrong-enter-email");
 const hambMenu = document.querySelector(".hamburgerMenu");
 const hambModal = document.querySelector(".hamburgerModal");
 const hambUl = document.querySelector("#hamb-ul")
+const loginUl = document.getElementById("header-ul");
 
 const emailReg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-console.log(hambMenu, hambModal, hambUl)
 
 hambMenu.addEventListener("click", () => {
   hambModal.classList.toggle("hambVisible");
@@ -21,7 +21,11 @@ hambUl.addEventListener("click", (event) => {
       hambModal.classList.toggle("hambVisible");
   }
 })
-
+loginUl.addEventListener("click", (event) => {
+  if(event.target.tagName === "LI" || event.target.tagName === "A"){
+    alert("You must log in first!");
+}
+})
 
 
 class Login {
