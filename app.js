@@ -19,7 +19,8 @@ const submitFormModal = document.getElementById("form-submit-modal");
 const submitFormModalBtn = document.getElementById("form-submit-modal-btn");
 const hambMenu = document.querySelector(".hamburgerMenu");
 const hambModal = document.querySelector(".hamburgerModal");
-const hambUl = document.querySelector("#hamb-ul")
+const hambUl = document.querySelector("#hamb-ul");
+const titleOfProject = document.getElementById("title-of-project");
 
 
 
@@ -102,6 +103,7 @@ removeModalButton.addEventListener("click", removeModalHandler);
 modalUl.addEventListener("click", showModalHandler);
 logoutHeader.addEventListener("click", () => (location.href = "index.html"));
 logoutHamb.addEventListener("click", () => (location.href = "index.html"));
+titleOfProject.addEventListener("click", () => (location.href = "welcome.html"));
 hambUl.addEventListener("click", (event) => {
     if(event.target.tagName === "LI" || event.target.tagName === "A"){
         hambModal.classList.toggle("hambVisible");
