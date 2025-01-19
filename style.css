@@ -385,9 +385,11 @@ h1 {
   top: 15px;
   font-size: 20px;
 }
-
+#bill-data-h3{
+  border: 1px solid #2e2e2e;
+  border-radius: 5px;
+}
 .bill-logo-title{
-  background-color: red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -397,12 +399,10 @@ h1 {
   margin-bottom: 2rem;
 }
 .bill-data{
-  background-color: blue;
   width: 100%;
   height: 25vh;
 }
 #bill-data-h3{
-  background-color: blue;
   width: 100%;
   height: 25vh;
   display: flex;
@@ -411,13 +411,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-/* #convert-rsd{
-  position: relative;
-  display: block;
-} */
-
 .consuption{
-  background-color: aqua;
   width: 100%;
   height: 25vh;
   display: flex;
@@ -562,6 +556,24 @@ align-items: center;
 
 
 @media screen and (max-width: 480px) {
+
+  .bill-modal{
+    width: 80%;
+    height: 50vh;
+  }
+  .bill-modal h2{
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+  .bill-data{
+    height: 50vh;
+    font-size: 15px;
+    text-align: center;
+  }
+  .consuption{
+    height: 35vh;
+  }
 
   .login-header .hamburger-menu-head{
     /* width: 100%;
