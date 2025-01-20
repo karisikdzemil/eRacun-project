@@ -16,20 +16,20 @@ async function process() {
         blackDrop.classList.toggle("visible");
     const title = document.getElementById("bill-data-h3");
     const response = await fetch(
-      `https://vebdizajn-4.onrender.com/api/vebdizajn/racun-za-struju?skupaStruja=${cheap}&jeftinaStruja=${standard}`
+      `https://vebdizajn-4.onrender.com/api/vebdizajn/racun-za-struju?skupaStruja=${standard}&jeftinaStruja=${cheap}`
     );
     const data = await response.json();
     console.log(data);
     console.log(cheap, standard);
-    title.innerHTML = `<h4>Standard consuption for this period: <b>${standard}KW</b> </h4> 
-                            <h4> Cheap consuption for this period: <b>${cheap}KW</b></h4>
-                                                    <h4 id="bill-convert"> Bill: <span id="rsd"> ${data.racun}</span>EUR</h4>
+    title.innerHTML = `<h4>Standard consuption for this period: <b>${standard} kW</b> </h4> 
+                            <h4> Cheap consuption for this period: <b>${cheap} kW</b></h4>
+                                                    <h4 id="bill-convert"> Bill: <span id="rsd"> ${data.racun}</span> EUR</h4>
                          `;
                          convertRsd.addEventListener("click", ()=>{
                             let price = document.getElementById("rsd").textContent;
                             price = Number(price) * 117;
                              const billConvert = document.getElementById("bill-convert");
-                             billConvert.innerHTML = ` Bill: <span id="rsd"> ${price}</span>RSD`
+                             billConvert.innerHTML = ` Bill: <span id="rsd"> ${price}</span> RSD`
                      }, {once: true});
     document.getElementById("standardCons").value = "";
     document.getElementById("cheapCons").value = "";

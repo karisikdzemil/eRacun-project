@@ -21,7 +21,7 @@ const hambMenu = document.querySelector(".hamburgerMenu");
 const hambModal = document.querySelector(".hamburgerModal");
 const hambUl = document.querySelector("#hamb-ul");
 const titleOfProject = document.getElementById("title-of-project");
-
+const logoLink = document.getElementById("logo-link");
 
 
 
@@ -113,3 +113,7 @@ homeBtn.addEventListener(
   "click",
   () => (location.href = "welcome.html#contactUs")
 );
+logoLink.addEventListener(
+    "click",
+    () => (location.href = "welcome.html")
+  );
