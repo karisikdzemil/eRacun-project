@@ -63,22 +63,22 @@ const validateContactHandler = () => {
     let name = false;
     let email = false;
     let message = false;
-    if(!/^[A-Z][a-z]+(\s[A-Z][a-z]?){0,}/.test(contactName.value)){
-        wrongName.textContent = "You must enter a valid name!"
+    if(!/^[A-Z]{1,15} [A-Z]{1,20}$/.test(contactName.value)){
+        wrongName.textContent = "Enter the full name in capital letters!"
     }else{
         wrongName.textContent = '';
         name = true;
     }
 
-    if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(contactEmail.value)){
-        wrongEmail.textContent = "You must enter a valid email address!"
+    if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(de)$/.test(contactEmail.value)){
+        wrongEmail.textContent = "Enter a valid email address from Germany!!"
     }else{
         wrongEmail.textContent = '';
         email = true;
     }
 
-    if(contactMessage.value === ''){
-        wrongMessage.textContent = "You must enter a message!"
+    if(!/^[^\d]{50,500}$/.test(contactMessage.value)){
+        wrongMessage.textContent = "Enter a message between 50 and 500 letters without numbers!"
     }else{
         wrongMessage.textContent = '';
         message = true;

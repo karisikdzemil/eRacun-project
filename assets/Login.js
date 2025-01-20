@@ -8,7 +8,7 @@ const hambModal = document.querySelector(".hamburgerModal");
 const hambUl = document.querySelector("#hamb-ul")
 const loginUl = document.getElementById("header-ul");
 
-const emailReg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const emailReg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(de)$/;
 
 
 hambMenu.addEventListener("click", () => {
@@ -37,7 +37,7 @@ class Login {
   }
   validateEmail() {
     if (!emailReg.test(this.email)) {
-      wrongEnterEmail.textContent = "Enter a valid email address";
+      wrongEnterEmail.textContent = "Enter a valid email address from Germany!";
       return false;
     } else {
       wrongEnterEmail.textContent = "";
